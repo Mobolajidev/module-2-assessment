@@ -5,60 +5,81 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+  font-family:  monaco cursive monospace;
+   font-style: italic;
+    
 }
-.wrapper{
+
+.container{
     width: 100vw;
     overflow-x: hidden;
 }
+
 .header{
-   text-align: center;
-   margin-top: 30px;
+    text-align: center;
+    margin-top: 40px;
+    color: slateblue;
+    animation: menu 0.2s;
+    position: relative;
 }
+
+@keyframes menu {
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+
 div section{
     margin: 20px 15px 0px 15px;
-    
 }
-.sect{
-    border: 1px solid black;
+
+.section{
+    border: 2px aliceblue solid;
     width: 95px;
     text-align: center;
-    
 }
-.chicken > .sect{
-    background-color: #D59898;
+
+.chicken > .section{
+     background-color: rgb( 144, 242, 33, 0.471 );
     color: black;
     font-weight: bold;
     float: right;
-}
-.beef > .sect{
-    background-color: #C14543;
-    color: white;
-    font-weight: bold;
-    float: right;
-}
-.sushi > .sect{
-    background-color: #E5D198;
+} 
+
+.beef > .section{
+     background-color: #D59898;
     color: black;
     font-weight: bold;
     float: right;
-}
+} 
+
+.sushi > .section{
+     background-color: rgb( 33, 242, 235, 0.471 );
+    color: black;
+    font-weight: bold;
+    float: right;
+} 
+
 .chicken{
-    background-color: #999999;
+    background-color: rgb( 33, 242, 235, 0.471 );
     border: 1px solid black;
 }
 .beef{
-    background-color: #999999;
+    background-color: rgb( 144, 242, 33, 0.471 );
     border: 1px solid black;
 }
 .sushi{
-    background-color: #999999;
+    background-color: rgba( 238, 204, 52, 0.496 );
     border: 1px solid black;
 
 }
+
+
 section p{
     padding: 30px 15px 10px 15px;
     text-align: left;
+    font-family: monaco cursive monospace;
+    font-weight: 100;
+        
 }
 
 /* desktop*/
